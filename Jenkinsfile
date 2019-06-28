@@ -10,5 +10,9 @@ node
       sshCommand remote: remote, command: "ls -lrt"
     //  sshCommand remote: remote, command: "for i in {1..5}; do echo -n \"Loop \$i \"; date ; sleep 1; done"
     }
+    stage('Install Localy file')
+  {
+    sh 'apt-get install $program'
+  }
   
 }
